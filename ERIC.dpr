@@ -1,0 +1,16 @@
+program ERIC;
+
+uses
+  Forms,
+  Main in 'Main.pas' {FMain},
+  about in 'about.pas' {FAbout};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.Title := 'ERIC';
+  Application.CreateForm(TFMain, FMain);
+  Application.CreateForm(TFAbout, FAbout);
+  Application.Run;
+end.
